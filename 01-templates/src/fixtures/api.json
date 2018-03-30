@@ -1,0 +1,18 @@
+[
+    {
+        "id": "carlsen",
+        "firstname": "Magnus",
+        "lastname": "Carlsen",
+        "birthday": "1990-11-30",
+        "bio": "Sven Magnus Øen Carlsen is a Norwegian chess grandmaster and the current World Chess Champion. A chess prodigy, Carlsen earned his grandmaster title at the age of 13 years and 148 days.",
+        "image": "../images/carlsen.jpeg"
+    },
+    {
+        "id": "karjakin",
+        "firstname": "Sergey",
+        "lastname": "Karjakin",
+        "birthday": "1990-01-12",
+        "bio": "Sergey Alexandrovich Karjakin is a Russian (formerly representing Ukraine) chess grandmaster. He is a former chess prodigy and holds the record for the world's youngest grandmaster, having qualified for this title at the age of 12 years and 7 months.",
+        "image": "../images/karjakin.jpeg"
+    }    
+]

@@ -1,4 +1,4 @@
-import Handlebars from 'handlebars';
+import Handlebars from 'handlebars/runtime';
 import $ from 'jquery';
 import router from 'page';
 import homeTpl from './templates/home.hbs';
@@ -8,17 +8,10 @@ import notFoundTpl from './templates/not-found.hbs';
 import playerTpl from './templates/player.hbs';
 import { yearsSince } from './helpers';
 import { dateFormat } from './helpers';
-import carlsen from './fixtures/carlsen.json';
-import karjakin from './fixtures/karjakin.json';
+import playersData from './fixtures/api.json';
 
-Handlebars.registerHelper('df', dateFormat);
-Handlebars.registerHelper('yS', yearsSince);
-
-const playersData = new Map();
-playersData.set('carlsen', carlsen);
-playersData.set('karjakin', karjakin);
-const playersDataArray = Array.from(playersData.values());
-
+Handlebars.registerHelper('dateFormat', dateFormat);
+Handlebars.registerHelper('yearsSince', yearsSince);
 
 const $app = $('#app');
 
@@ -39,12 +32,14 @@ function notFound() {
 }
 
 async function players() {
-    render(playersTpl, {players: playersDataArray});
+    render(playersTpl, {players: playersData});
 }
 
 function player(ctx) {
     const {params} = ctx;
-    render(playerTpl, {players: playersData.get(params.player)});
+    const playerId = params.player;
+    const playerData = playersData.find(player => player.id === playerId);
+    render(playerTpl, playerData);
 }
 
 router('/', index);
