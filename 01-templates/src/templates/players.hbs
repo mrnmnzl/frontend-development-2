@@ -1,0 +1,14 @@
+<table class="table">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Link</th>
+    </tr>
+   {{#each players}} 
+    <tr>
+        <td>{{firstname}}</td>
+        <td>{{lastname}}</td>
+        <td><a href="/players/{{id}}">Profil</a></td>
+    </tr>
+    {{/each}} 
+</table>
