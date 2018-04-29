@@ -1,0 +1,28 @@
+<article>
+    <h1 class="display-6">{{driver.givenName}} {{driver.familyName}} (Driver)</h1>
+    <p>
+        {{driver.nationality}}
+    </p>
+    <table class="table">
+        <thead>
+            <th>Constructor</th>
+            <th>Nationality</th>
+            <th>Wikipedia</th>
+        </thead>
+        <tbody>
+            {{#each driver.constructors}}
+                <tr>
+                    <td>
+                        <a href="/constructors/{{constructorId}}">{{name}}</a>
+                    </td>
+                    <td>
+                        {{nationality}}
+                    </td>
+                    <td>
+                        <a href="{{url}}">Goto</a>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</article>

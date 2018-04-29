@@ -1,0 +1,53 @@
+{
+  "name": "02-api",
+  "version": "1.0.0",
+  "description": "The 02-api assignment.",
+  "private": true,
+  "scripts": {
+    "build": "webpack --colors --mode=production",
+    "lint": "eslint --config .eslintrc.json ./src",
+    "start": "webpack-dev-server --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multimediatechnology/assignment-frontend2.git"
+  },
+  "keywords": [
+    "API",
+    "fetch",
+    "Webpack"
+  ],
+  "author": "Hannes Moser <hannes.moser@fh-salzburg.ac.at>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel-eslint": "^8.2.3",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^5.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "file-loader": "^1.1.11",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.3",
+    "sass-loader": "^6.0.7",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "jquery": "^3.3.1",
+    "page": "^1.8.6",
+    "popper.js": "^1.14.3",
+    "whatwg-fetch": "^2.0.4"
+  }
+}
