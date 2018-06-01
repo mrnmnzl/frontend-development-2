@@ -31,7 +31,7 @@ function notFound() {
     render(notFoundTpl);
 }
 
-async function players() {
+function players() { 
     render(playersTpl, {players: playersData});
 }
 
