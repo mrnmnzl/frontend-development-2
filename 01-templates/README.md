@@ -1,9 +1,4 @@
-# 02-router
-
-## Assignment
-
-* Implement a router with pop and push state
-
+# 01-template
 ## Setup
 
 ```bash
