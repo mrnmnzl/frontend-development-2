@@ -22,7 +22,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "handlebars": "^4.0.3",
     "hbsfy": "^2.7.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "load-grunt-tasks": "^3.3.0",
     "serve-static": "^1.13.2",
     "time-grunt": "^1.2.1",
